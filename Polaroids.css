@@ -55,10 +55,14 @@ body {
   box-shadow: 0 0.2rem 1.2rem rgba(0,0,0,0.2);
     /* position: absolute; */
     position: fixed;
+    /* animation: zAxisWobble 1s; */
+
 }
 .polaroid > img{
   max-width: 100%;
   height: auto;
+  animation-name: opacityLoadIn;
+  animation-duration: 4s;
 }
 .caption {
   font-size: 1.8rem;
@@ -102,23 +106,23 @@ button{
   position: relative;
 }
 
-/* .item:hover {
-  filter: none;
-  transform: scale(1, 1) rotate(0deg) !important;
-  transition: all 0.35s;
+/* The animation code */
+@keyframes opacityLoadIn {
+  0%   {opacity: 0;}
+  /* 25%  {opacity: 0.25;}
+  50%  {opacity: 0.50;} */
+  100% {opacity: 1;}
+}
+
+/* @keyframes zAxisWobble {
+  0%{ transform: rotateY(0deg);}
+  50%{ transform: rotateY(5deg);}
+  100%{ transform: rotateY(0deg);}
+  Needs some JS in order to gather the current x axis tilt prior to animation.
 } */
-/* .item:hover .polaroid:before {
-  content: '';
-  position: absolute;
-  z-index: -1;
-  transform: rotate(0deg);
-  height: 90%;
-  width: 90%;
-  bottom: 0%;
-  right: 5%;
-  box-shadow: 0 1rem 3rem rgba(0,0,0,0.2);
-  transition: all 0.35s;
-} */
+
+
+
 
 
 
