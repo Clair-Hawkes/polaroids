@@ -10,28 +10,27 @@
 
 </head>
 <body>
-  <div class="background">
-  <h1>Polaroids!</h1>
-  <button id="draw">Draw a card!</button>
-  <button id="snapshot" class="z-index">Take a photo!</button>
+  <div class="background z0">
+    <!--
+      TODO: CUrrent project.
+      Bring the current BUTTONS and TITLE Above the background.
+    -->
 
-  <img src="" alt="" srcset="">
+    <!-- THINKING SPACE
+    CALL yoUR SHOt BABY. I'm Proud of You!!!
+  Attempt to bring the title and buttons ontop of the clip-path
+      1. Bring the Z-Index of the h1 & divs on top of via z-index.
+      1a. Attempted multiple times no effect.
+      2. Move the title and buttons out of the background DIV.
+ -->
 
-  <section id="placedcards"></section>
-
-  <section id="placedPolaroids">
-  </section>
-
-  <!-- <section id="SinglePolaroid">
-    <div class="wrapper">
-      <div class="item">
-        <div class="polaroid"><img src="https://image.ibb.co/b8UJBc/administration_architecture_big_ben_221166.jpg">
-          <div class="caption">I Miss London</div>
-        </div>
-      </div>
-    </div>
-  </section> -->
 </div>
+<h1 class="z-index z1">Polaroids!</h1>
+<button id="draw" class="z1">Draw a card!</button>
+<button id="snapshot" class="z-index z1">Take a photo!</button>
+<section id="placedcards" class="z1"></section>
+<section id="placedPolaroids"></section>
+
 
   <script src="https://unpkg.com/axios/dist/axios.js"></script>
   <script src="Polaroids.js"></script>
