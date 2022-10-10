@@ -98,6 +98,12 @@ function createCard(img){
 */
 function createPolaroid(){
   const imgValue = "https://image.ibb.co/b8UJBc/administration_architecture_big_ben_221166.jpg";
+  /**testPhotoURL takes a number parameter and returns a full photo URL */
+  function testPhotoURL(){
+    let randInt = getRndInteger(1,11);
+    let baseURL = `https://raw.githubusercontent.com/Clair-Hawkes/polaroids/main/testPhotos/building_${randInt}.JPG`;
+    return baseURL;
+  }
   const captionText = 'I love Big Ben!';
 
   // _________ 1. Create all elements
@@ -123,7 +129,8 @@ function createPolaroid(){
 
   //img
   const $polaroidPicture = $("<img>");
-  $polaroidPicture.attr('src',imgValue);
+  // $polaroidPicture.attr('src',imgValue);
+  $polaroidPicture.attr('src',testPhotoURL());
   //Caption Div
   const $caption = $('<div>');
   $caption.attr('class','caption');
