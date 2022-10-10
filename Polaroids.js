@@ -71,7 +71,8 @@ function createCard(img){
   const cardHtml = createCard(cardImage);
 
   // $("#placedcards").prepend(cardHtml);
-  $("#placedcards").append(cardHtml);
+  // $("#placedcards").append(cardHtml);
+  $("#placeAll").append(cardHtml);
 
 }
 
@@ -155,9 +156,8 @@ function appendPolaroid(){
   console.log(appendPolaroid);
   const polaroidHtml = createPolaroid();
 
-  // $("#placedcards").prepend(cardHtml);
-  $("#placedPolaroids").append(polaroidHtml);
-
+  // $("#placedPolaroids").append(polaroidHtml);
+  $("#placeAll").append(polaroidHtml);
 }
 
 

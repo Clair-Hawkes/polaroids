@@ -1,7 +1,27 @@
+#snapshot{
+  cursor: pointer;
+  transition: all 0.4s;
+}
+#snapshot:hover{
+  animation: borderButton 1s;
+  text-shadow: .5px .5px #212121;
+}
+#draw:hover{
+  animation: borderButton 1s;
+  text-shadow: .5px .5px #212121;
+}
+
+
 .card{
     display: inline;
     position: absolute;
     top: 200px;
+
+}
+.card > img{
+  /* box-shadow: 0 0.2rem 1.2rem rgba(0,0,0,0.2); */
+  border-radius: 5%;
+  box-shadow: 0.2rem 0.2rem 1.2rem rgba(0,0,0,0.3);
 }
 /* img{
     display: inline;
@@ -45,6 +65,7 @@ body {
 .wrapper {
   position: absolute;
   width: 100%;
+  margin-top: 10%;
   padding: 0 2rem;
   text-align: center;
 }
@@ -52,7 +73,7 @@ body {
     width: 50%;
   background: #fff;
   padding: 1rem;
-  box-shadow: 0 0.2rem 1.2rem rgba(0,0,0,0.2);
+  box-shadow: 0 0.2rem 1.2rem rgba(0,0,0,0.3);
     /* position: absolute; */
     position: fixed;
     /* animation: zAxisWobble 1s; */
