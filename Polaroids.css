@@ -11,6 +11,13 @@
   text-shadow: .5px .5px #212121;
 }
 
+#polaroidCameraImg{
+  height:10%;
+  width:auto;
+  position: fixed;
+  margin-right: 10%;
+  margin-top: 13.5%;
+}
 
 .card{
     display: inline;
@@ -65,7 +72,7 @@ body {
 .wrapper {
   position: absolute;
   width: 100%;
-  margin-top: 10%;
+  margin-top: 5%;
   padding: 0 2rem;
   text-align: center;
 }

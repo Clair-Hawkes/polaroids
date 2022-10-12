@@ -10,6 +10,8 @@
 
 </head>
 <body>
+
+
   <div class="background z0">
     <!--
       TODO: CUrrent project.
@@ -25,9 +27,9 @@
  -->
 
 </div>
-<h1 id = "snapshot" class="z-index z1">Polaroids!</h1>
-<h1> | </h1>
+<h1 id = "snapshot" class="z-index z1">Polaroids! </h1><h1> | </h1>
 <h1 id = "draw" class="z-index z1">Draw a Card!</h1>
+<!-- <img id="polaroidCameraImg" src="https://upload.wikimedia.org/wikipedia/commons/f/f2/Polaroid_SX-70_%284462345243%29.jpg"></h1> -->
 <!-- <button id="draw" class="z1">Draw a card!</button> -->
 <!-- <button id="snapshot" class="z-index z1">Take a photo!</button> -->
 <section id="placedcards" class="z1"></section>
@@ -37,5 +39,18 @@
 
   <script src="https://unpkg.com/axios/dist/axios.js"></script>
   <script src="Polaroids.js"></script>
+  <!-- Simple audio playback -->
+  <!-- <audio src="./polaroid-camera-take-picture-01.mp3" autoplay>
+  <a href="AudioTest.ogg">Download OGG audio</a>.
+</audio> -->
+
+<audio id="polaroidCameraSound"
+controls
+src="./polaroid-camera-take-picture-01.mp3">
+    <a href="/media/cc0-audio/t-rex-roar.mp3">
+        Download audio
+    </a>
+</audio>
+
 </body>
 </html>

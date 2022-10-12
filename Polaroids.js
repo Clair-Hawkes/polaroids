@@ -158,6 +158,9 @@ function appendPolaroid(){
 
   // $("#placedPolaroids").append(polaroidHtml);
   $("#placeAll").append(polaroidHtml);
+  const $audio = $("#polaroidCameraSound");
+  console.log("audio",$audio);
+  $audio.play();
 }
 
 
@@ -176,9 +179,6 @@ $("#draw").on("click",appendCard)
 
 // EVENT LISTENER for button click, Call drawPolaroid
 $("#snapshot").on("click",appendPolaroid)
-
-
-
 
 
 // Create a div
