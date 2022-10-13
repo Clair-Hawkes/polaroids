@@ -1,6 +1,6 @@
 "use strict"
 
-const BASEURL = "http://deckofcardsapi.com/api/deck/";
+const BASEURL = "https://deckofcardsapi.com/api/deck/";
 let deckId = '';
 
 function getRndInteger(min, max) {
